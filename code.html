@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Python Reference Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-info">
+            <h1>Python Reference Page</h1>
+            <p>
+                <i>
+                    This page was developed as my final project for GSP 318 - Geospatial Programming at
+                    Cal Poly Humboldt, Spring 2023
+                </i>
+            </p>
+        </div>
+
+        <nav>
+            <ul class="top-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Python Code Samples</a></li>
+                <li><a href="#">Useful Reference Sites</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div>
+        <ul class="side-menu">
+            <li class="table-contents"><strong>Table of Contents</strong></li>
+
+            <div class="scroll">
+            <li class="section-header">Basic Python</li>
+            <li><a href="">Data Types</a></li>
+            <li><a href="">Math Functions</a></li>
+            <li><a href="">Variable Rules</a></li>
+            <li><a href="">Concatenate Strings</a></li>
+            <li><a href="">Basic Functions</a></li>
+            <li><a href="">Boolean Values</a></li>
+            <li><a href="">Comparison Operators</a></li>
+            <li><a href="">Logical Operators</a></li>
+
+            <li class="section-header">Random Module</li>
+            <li><a href="">Get Random Integer</a></li>
+            <li><a href="">Get Random Integer in Range</a></li>
+            <li><a href="">List of Random Numbers</a></li>
+            <li><a href="">Assign Random Number to Seed</a></li>
+
+            <li class="section-header">.txt and .csv Files</li>
+            <li><a href="">Write to .txt</a></li>
+            <li><a href="">Write to .csv</a></li>
+            <li><a href="">While Loops</a></li>
+            <li><a href="">CSV Library</a></li>
+            <li><a href="">Split Strings</a></li>
+
+            <li class="section-header">SpaPy Library</li>
+            <li><a href="">Imports</a></li>
+            <li><a href="">Get Info from Shapefile</a></li>
+            <li><a href="">Buffer</a></li>
+            <li><a href="">Union</a></li>
+            <li><a href="">Centroids</a></li>
+            <li><a href="">Convex Hull</a></li>
+            <li><a href="">Simplify</a></li>
+            <li><a href="">Clip</a></li>
+            <li><a href="">Overlay Transformations</a></li>
+            <li><a href="">Intersection</a></li>
+            <li><a href="">Difference</a></li>
+            <li><a href="">Touches</a></li>
+            <li><a href="">Disjoint</a></li>
+            <li><a href="">Overlap</a></li>
+            <li><a href="">Cross</a></li>
+            <li><a href="">Contain</a></li>
+        </ul>
+
+        <main class="content">
+            <section>
+                <h1>Python Basics</h1>
+                <p>Sources: GSP 318, docs.python.org, automatetheboringstuffwithpython.com</p>
+                <br />
+
+                <h2 id="basic-data">Basic Data Types</h2>
+                <p>Integer: 1</p>
+                <p>Float: 1.94</p>
+                <p>String: "Python!"</p>
+                <p>Empty String: ""</p>
+                <br />
+                <p>Print string to console</p>
+                <code>print("Hello World")</code>
+                <br />
+
+                <h2 id="basic-math">Basic Math Operations</h2>
+                <pre>
+                <code>
+print(1 + 2)   # Addition
+print(1 - 2)   # Subtraction
+print(10 * 5)  # Multiplication
+print(10 / 5)  # Division
+print(10 ** 5) # Exponent
+print(10 // 5) # Integer division
+print(10 % 5)  # Modulus/remainder
+print(5 + 9.55 * (5 - 2) / 5 + 2 ** 2) # Multiple operations (follow order of operations)
+                    </code>
+                </pre>
+
+                <h2 id="variables">Rules for Variable Names</h2>
+                <p>- No spaces</p>
+                <p>- Letters, numbers, and underscore (_) only</p>
+                <p>- Cannot begin with number</p>
+                <p>- Case sensitive</p>
+                <br /><br />
+
+                <h2 id="strings">Concatenate Strings</h2>
+                <pre>
+                <code>
+FirstName = "John"
+LastName = "Doe"
+print(FirstName + LastName)
+print(FirstName + " " + LastName) # With space in between names
+print(FirstName * 5) # Print name 5 times
+                    </code>
+                </pre>
+                <br />
+
+                <h2 id="other-functions">Other Functions</h2>
+                <pre>
+                <code>
+print()
+input()
+len()
+str()
+int()
+float()
+round()
+abs()
+                    </code>
+                </pre>
+                <br />
+
+                <h2 id="boolean">Boolean Values</h2>
+                <p>- True</p>
+                <p>- False</p>
+                <br />
+
+                <h2 id="comparison">Comparison Operators</h2>
+                <p>- Equal to: ==</p>
+                <p>- Not equal to: !=</p>
+                <p>- Lesser than: <</p>
+                <p>- Greater than: ></p>
+                <p>- Lesser than or equal: <=</p>
+                <p>- Greater than or equal: >=</p>
+                <pre>
+                <code>
+print(42 == 42) # return True
+print(42 == "42") # return False
+
+print(2 != 5) # return True
+print((2 != 2) # return False
+
+print(5 < 10) # return True
+print(5 <= 5.0) # return False
+                    </code>
+                </pre>
+                <br />
+
+                <h2 id="logical">Logical Operators</h2>
+                <p>- and</p>
+                <p>- or</p>
+                <p>- not</p>
+                <pre>
+                    <code>
+print((4 < 6) and (6 < 7))
+print((4 < 6) and (8 < 7))
+                    </code>
+                </pre>
+            </section>
+        </main>
+    </div>
+
+
+
+    <div class="footer">
+        &copy; 2023 Matt Paris
+    </div>
+
+</body>
+</html>
