@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Python Reference Page</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="header">
@@ -21,67 +24,71 @@
 
         <nav>
             <ul class="top-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Python Code Samples</a></li>
-                <li><a href="#">Useful Reference Sites</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="code.html">Python Code Samples</a></li>
+                <li><a href="references.html">Useful Reference Sites</a></li>
+                <li><a href="about.html">About</a></li>
             </ul>
         </nav>
-    </div>
+    </div> 
+    
     <div>
         <ul class="side-menu">
             <li class="table-contents"><strong>Table of Contents</strong></li>
 
             <div class="scroll">
             <li class="section-header">Basic Python</li>
-            <li><a href="">Data Types</a></li>
-            <li><a href="">Math Functions</a></li>
-            <li><a href="">Variable Rules</a></li>
-            <li><a href="">Concatenate Strings</a></li>
-            <li><a href="">Basic Functions</a></li>
-            <li><a href="">Boolean Values</a></li>
-            <li><a href="">Comparison Operators</a></li>
-            <li><a href="">Logical Operators</a></li>
+            <li><a href="code.html#basic-data">Data Types</a></li>
+            <li><a href="code.html#basic-math">Math Functions</a></li>
+            <li><a href="code.html#variables">Variable Rules</a></li>
+            <li><a href="code.html#strings">Concatenate Strings</a></li>
+            <li><a href="code.html#other-functions">Basic Functions</a></li>
+            <li><a href="code.html#boolean">Boolean Values</a></li>
+            <li><a href="code.html#comparison">Comparison Operators</a></li>
+            <li><a href="code.html#logical">Logical Operators</a></li>
+            <li><a href="code.html#fun">For Fun</a></li>
 
-            <li class="section-header">Random Module</li>
-            <li><a href="">Get Random Integer</a></li>
-            <li><a href="">Get Random Integer in Range</a></li>
-            <li><a href="">List of Random Numbers</a></li>
-            <li><a href="">Assign Random Number to Seed</a></li>
+            <li class="section-header">Random Library</li>
+            <li><a href="code.html#random-float">Get Random Floatr</a></li>
+            <li><a href="code.html#random-int">Get Random Integer</a></li>
+            <li><a href="code.html#random-range">Get Random Integer in Range</a></li>
+            <li><a href="code.html#random-list">List of Random Numbers</a></li>
+            <li><a href="code.html#random-seed">Assign Random Number to Seed</a></li>
 
             <li class="section-header">.txt and .csv Files</li>
-            <li><a href="">Write to .txt</a></li>
-            <li><a href="">Write to .csv</a></li>
-            <li><a href="">While Loops</a></li>
-            <li><a href="">CSV Library</a></li>
-            <li><a href="">Split Strings</a></li>
+            <li><a href="code.html#write-txt">Write to .txt</a></li>
+            <li><a href="code.html#write-csv">Write to .csv</a></li>
+            <li><a href="code.html#while-loops">While Loops</a></li>
+            <li><a href="code.html#csv-lib">CSV Library</a></li>
+            <li><a href="code.html#split-strings">Split Strings</a></li>
 
             <li class="section-header">SpaPy Library</li>
-            <li><a href="">Imports</a></li>
-            <li><a href="">Get Info from Shapefile</a></li>
-            <li><a href="">Buffer</a></li>
-            <li><a href="">Union</a></li>
-            <li><a href="">Centroids</a></li>
-            <li><a href="">Convex Hull</a></li>
-            <li><a href="">Simplify</a></li>
-            <li><a href="">Clip</a></li>
-            <li><a href="">Overlay Transformations</a></li>
-            <li><a href="">Intersection</a></li>
-            <li><a href="">Difference</a></li>
-            <li><a href="">Touches</a></li>
-            <li><a href="">Disjoint</a></li>
-            <li><a href="">Overlap</a></li>
-            <li><a href="">Cross</a></li>
-            <li><a href="">Contain</a></li>
+            <li><a href="code.html#imports">Imports</a></li>
+            <li><a href="code.html#shape">Get Info from Shapefile</a></li>
+            <li><a href="code.html#buffer">Buffer</a></li>
+            <li><a href="code.html#Union">Union</a></li>
+            <li><a href="code.html#Centroids">Centroids</a></li>
+            <li><a href="code.html#Convex Hull">Convex Hull</a></li>
+            <li><a href="code.html#Simplify">Simplify</a></li>
+            <li><a href="code.html#Clip">Clip</a></li>
+            <li><a href="code.html#Overlay Transformations">Overlay Transformations</a></li>
+            <li><a href="code.html#Intersection">Intersection</a></li>
+            <li><a href="code.html#Difference">Difference</a></li>
+            <li><a href="code.html#Overlay Operations">Overlay Operations</a></li>
+            <li><a href="code.html#Overlay Operations">Touches</a></li>
+            <li><a href="code.html#Overlay Operations">Disjoint</a></li>
+            <li><a href="code.html#Overlay Operations">Overlap</a></li>
+            <li><a href="code.html#Overlay Operations">Cross</a></li>
+            <li><a href="code.html#Overlay Operations">Contain</a></li>
         </ul>
 
         <main class="content">
-            <section>
+            <section class="python-basics">
                 <h1>Python Basics</h1>
                 <p>Sources: GSP 318, docs.python.org, automatetheboringstuffwithpython.com</p>
                 <br />
 
-                <h2 id="basic-data">Basic Data Types</h2>
+                <h2 id="basic-data">Basic Data Types</h2><br />
                 <p>Integer: 1</p>
                 <p>Float: 1.94</p>
                 <p>String: "Python!"</p>
@@ -105,7 +112,7 @@ print(5 + 9.55 * (5 - 2) / 5 + 2 ** 2) # Multiple operations (follow order of op
                     </code>
                 </pre>
 
-                <h2 id="variables">Rules for Variable Names</h2>
+                <h2 id="variables">Rules for Variable Names</h2><br />
                 <p>- No spaces</p>
                 <p>- Letters, numbers, and underscore (_) only</p>
                 <p>- Cannot begin with number</p>
@@ -139,12 +146,12 @@ abs()
                 </pre>
                 <br />
 
-                <h2 id="boolean">Boolean Values</h2>
+                <h2 id="boolean">Boolean Values</h2><br />
                 <p>- True</p>
                 <p>- False</p>
                 <br />
 
-                <h2 id="comparison">Comparison Operators</h2>
+                <h2 id="comparison">Comparison Operators</h2><br />
                 <p>- Equal to: ==</p>
                 <p>- Not equal to: !=</p>
                 <p>- Lesser than: <</p>
@@ -165,17 +172,458 @@ print(5 <= 5.0) # return False
                 </pre>
                 <br />
 
-                <h2 id="logical">Logical Operators</h2>
+                <h2 id="logical">Logical Operators</h2><br />
                 <p>- and</p>
                 <p>- or</p>
                 <p>- not</p>
                 <pre>
-                    <code>
+                <code>
 print((4 < 6) and (6 < 7))
 print((4 < 6) and (8 < 7))
                     </code>
                 </pre>
+                <br />
+
+                <h2 id="fun">For Fun</h2><br />
+                <p>Fibonacci Sequence</p>
+                <pre>
+                <code>
+a, b = 0, 1
+while a < 10:
+    print(a)
+    a, b = b, a + b
+                    </code>
+                </pre>
             </section>
+
+
+            <section class="random">
+                <h1>Random Library</h1>
+                <p>Sources: GSP 318, docs.python.org, GeeksForGeeks.org</p>
+                <br />
+
+                <h2>Import Random Library</h2>
+                <pre>
+                <code>
+import random
+                    </code>
+                </pre>
+                <br />
+
+                <h2 id="random-float">Random Float Between 0 and 1</h2>
+                <pre>
+                <code>
+print(random.random())
+                    </code>
+                </pre>
+                <br />
+
+                <h2 id="random-int">Random Integer Between 0 and 9</h2>
+                <pre>
+                <code>
+print(random.randrange(0, 9))
+                    </code>
+                </pre>
+                <h2 id="random-range">Random Even Integer Between 0 and 100</h2>
+                <pre>
+                <code>
+print(random.randrange(0, 101, 2))
+                    </code>
+                </pre>
+                <h2>Variables with Random Numbers Between 1 and 6</h2>
+                <pre>
+                <code>
+RandNum1 = random.uniform(1, 6.999999)
+RandNum2 = random.uniform(1, 6.999999)
+print(RandNum1, RandNum2)
+
+# Print results as integers
+print(int(RandNum1), ",", int(RandNum2))
+                    </code>
+                </pre>
+                <br />
+
+                <h2 id="random-list">Create a List with 10 Random Numbers</h2>
+                <pre>
+                <code>
+list = []
+
+for i in range(10):
+list.append(random.random())
+
+# Print random list
+print(list)
+
+# Print 2 values from list
+print(random.sample(list, 2))
+                    </code>
+                </pre>
+                <br />
+
+                <h2 id="random-seed">Assign a Random Number to a Seed</h2>
+                <pre>
+                <code>
+seed1 = random.seed(7)
+print(random.randint(1, 100))
+                    </code>
+                </pre>
+            </section>
+
+            <section class="text-csv">
+                <h1>.txt and .csv Files</h1>
+                <p>Sources: GSP 318</p>
+                <br />
+
+                <h2 id="write-txt">Writing to text files</h2>
+                <pre>
+                <code>
+TheFile=open("test.txt","w")
+TheFile.write("Row 1\n")
+TheFile.write("Row 2\n")
+TheFile.write("Row 3\n")
+TheFile.close()
+                    </code>
+                </pre>
+                <br />
+
+                <h2 id="write-csv">Writing to CSV files</h2>
+                <pre>
+                <code>
+TheFile=open("test_csv.csv","w") # open the file for writing
+TheFile.write("1,2,3,4\n") # write a string to the file
+TheFile.write("5,6,7,8\n")
+TheFile.close() # close the file
+                    </code>
+                </pre>
+                <br />
+
+                <h2 id="while-loops">While Loops to write CSV files</h2>
+                <pre>
+                <code>
+TheFile=open("test2.csv","w")
+Index=0
+while (Index<10): # go through the code below for each value from 0 to 9
+                  TheFile.write(format(Index)+"\n") # Convert the Index to a string and write a line to the file
+                  Index+=1
+                  TheFile.close()
+                    </code>
+                </pre>
+                <br />
+
+                <pre>
+                <code>
+TheFile=open("test3.csv","w")
+Row=0 # start the row counter at 0
+while (Row<10): # write out 10 rows (0 to 9)
+                Column=0 # start the column counter at 0
+                while (Column<4): # write out 4 columns (0 to 3)
+        TheValue=Row*Column # creating an interesting value
+        if (Column>0): # don't write out the comma on the first column, just the subsequent ones
+            TheFile.write(",")
+        TheFile.write(format(TheValue)) # convert the value to a string and write it to the file
+        Column+=1 # move to the next column
+    TheFile.write("\n") # move to the next line
+    Row+=1 # move to the next line
+                    </code>
+                </pre>
+                <br />
+
+                <pre>
+                <code>
+TheFile=open("Test.csv","w") # open the file for writing
+
+TheFile.write("Latitude,Longitude\n") # write the header line
+
+Count=0 # setup a counter
+while (Count<5): # loop until the counter is 5
+                 TheFile.write(format(Count+40)+","+format(Count-120)+"\n") # write two columns of data
+                 Count+=1 # add one to the counter
+                 TheFile.close() # close the file
+                    </code>
+                </pre>
+                <br />
+
+                <h2 id="csv-lib">Using CSV Library to Write Files</h2>
+                <pre>
+                <code>
+import csv
+
+TheFile=open('Test12.csv', 'w') # open the file for writing
+
+# Create a CSV writer object
+writer = csv.writer(TheFile,quoting=csv.QUOTE_NONNUMERIC, lineterminator = '\n') # just quote non-numbers and use "newline" for the end of line character
+
+# write out each row of the CSV file.
+writer.writerow(['SN', 'Person', 'DOB']) # write the header line
+writer.writerow([1, 'John', '18/1/1997']) # specify the rows as lists
+writer.writerow([2, 'Marie','19/2/1998'])
+
+# close the file
+TheFile.close()
+                    </code>
+                </pre>
+                <br />
+
+                <h2 id="split-strings">Split Comma Delimited Strings</h2>
+                <pre>
+                <code>
+TheString="Rock,Sand,Shale" # create a string delimited with commas
+TheElements=TheString.split(",") # split the string at each comma
+print(TheElements) # print the elements in the string
+print(TheElements[1]) # print the second element in the string
+                    </code>
+                </pre>
+                <br />
+
+                <pre>
+                <code>
+TheFile=open("test.txt","r") # open the file for reading (thus the "r")
+TheOutputFile=open("output.csv","w") # open the output file for writing
+
+TheOutputFile.write("Column1","Column2") # output the header line
+
+NumLines=0
+TheLine=TheFile.readline() # read the first line in the file
+while ((TheLine!="") and (NumLines<100)): # while the line is not blank, go through this loop
+                                          print(TheLine)
+                                          TheLine=TheFile.readline() # read the next line in the file
+                                          TheCells=TheLine.split("\t") # split up the line
+                                          # do conversions on the cells here.
+                                          TheOutputFile.write(TheCells[0]+","+TheCells[1]) # output the line to the output file
+                                          NumLines+=1 # add one to count the number of lines read
+                                          TheFile.close()
+                                          TheOutputFile.close() # close the file
+                                          print("Read "+format(NumLines)+" lines from the file")
+                    </code>
+                </pre>
+                <br />
+
+            </section>
+
+            <section class="spapy">
+                <h1>SpaPy Library</h1>
+                <p>Sources: GSP 318, https://jim.reclaim.hosting/SpaPy2/</p>
+                <br />
+
+                <p>* Follow documentation at SpaPy.org. Be sure to use3 latest version of SpaPy.</p>
+                <br />
+
+                <h2 id="imports">Import SpaPy Libraries</h2>
+                <pre>
+                <code>
+# Import libraries
+import sys
+
+# Open source spatial libraries
+import shapely
+import numpy
+from osgeo import gdal
+import math
+import random
+
+# SpaPy libraries
+from SpaPy import SpaBase
+from SpaPy import SpaPlot
+from SpaPy import SpaVectors
+from SpaPy import SpaView
+from SpaPy import SpaReferencing
+from SpaPy import SpaDensify
+from SpaPy import SpaView
+from SpaPy import SpaRasters
+from SpaPy import SpaTopo
+from SpaPy import SpaRasterVectors
+                    </code>
+                </pre>
+                <br />
+
+                <h2>Set File Paths with Test Data</h2>
+                <pre>
+                <code>
+CountriesFilePath="SpaPyTests/Data/NaturalEarth/ne_110m_admin_0_countries.shp"
+
+OverlayFile="SpaPyTests/Data/Overlay/Box.shp"
+
+HumbRiverPath="SpaPyTests/Data/HumboldtCounty/hydrography/nhd24kst_l_ca023.shp"
+
+HumbZoningPath="SpaPyTests/Data/HumboldtCounty/Humboldt_Zoning_ClippedToEelRiver2.shp"
+
+Zoning_Bay="SpaPyTests/Data/HumboldtCounty/Zoning_Bay.shp"
+
+OutputFolderPath="" # Set folder path to same folder as scripts
+
+# Show Zoning_Bay in SpaView
+SpaView.Show(Zoning_Bay)
+
+# Set data to view at 600x600 px
+SpaView.Show(Zoning_Bay,600,600)
+                    </code>
+                </pre>
+                <br />
+
+                <h2 id="shape">Get Information from Shapefile</h2>
+                <pre>
+                <code>
+TheDataset=SpaVectors.SpaDatasetVector() #create a new layer
+
+TheDataset.Load(HumbZoningPath) # load the contents of the layer
+
+
+print("Type: "+format(TheDataset.GetType())) # get the type of data in the dataset
+
+print("CRS: "+format(TheDataset.GetCRS())) # return the coordinate reference system
+
+print("NumFeatures: "+format(TheDataset.GetNumFeatures())) # get the number of features in the dataset
+
+print("Bounds: "+format(TheDataset.GetBounds())) # get the spatial bounds of the features
+
+NumAttributes=TheDataset.GetNumAttributes()  # retrieve the number of attributes within a dataset
+
+print("NumAttributes: "+format(NumAttributes)) # return with number of attributes
+
+print("Show the dataset")
+
+SpaView.Show(TheDataset)
+
+print("Done showing the dataset")
+                    </code>
+                </pre>
+                <br />
+
+                <h2 id="buffer">Buffer</h2>
+                <pre>
+                <code>
+SpaView.Show(CountriesFilePath) # display the dataset in a view
+
+BufferedDataset=SpaVectors.Buffer(CountriesFilePath,10)  # create 10 unit buffer (represents 10 degrees in this instance)
+BufferedDataset.Save(OutputFolderPath+"Buffered_10.shp") # save buffered shapefile
+
+SpaView.Show(BufferedDataset) # display the dataset in a view
+                    </code>
+                </pre>
+                <br />
+
+                <h2 id="Union">
+                    Union</h2id="">
+                    <pre>
+                    <code>
+UnionBuffer=SpaVectors.Union(BufferedDataset) # perform a union on the dataset
+
+UnionBuffer.Save(OutputFolderPath+"UnionBuffer.shp")  # save union results
+
+SpaView.Show(UnionBuffer) # view the results
+                    </code>
+                </pre>
+                    <br />
+
+                    <h2 id="Centroids">
+                        Centroids</h2id="">
+                        <pre>
+                        <code>
+
+CentroidDataset=SpaVectors.Centroid(CountriesFilePath) # create centroid
+
+CentroidDataset.Save(OutputFolderPath+"Centroid.shp")  # save centroid results
+
+SpaView.Show(CentroidDataset)
+                    </code>
+                </pre>
+                        <br />
+
+                        <h2 id="Convex Hull">
+                            Convex Hull</h2id="">
+                            <pre>
+                            <code>
+ConvexHullDataset=SpaVectors.ConvexHull(CountriesFilePath) # find convex hull
+
+ConvexHullDataset.Save(OutputFolderPath+"ConvexHull.shp")  # save convex hull
+
+SpaView.Show(ConvexHullDataset) # view created convex hull dataset
+                    </code>
+                </pre>
+                            <br />
+
+                            <h2 id="Simplify">Simplify</h2>
+                            <pre>
+                            <code>
+SimplifiedDataset=SpaVectors.Simplify(CountriesFilePath,2) # simpify shapefile
+SimplifiedDataset.Save(OutputFolderPath+"Simplify.shp") # save simplified shapefile
+
+SpaView.Show(SimplifiedDataset)
+                    </code>
+                </pre>
+                            <br />
+
+                            <h2 id="Clip">Clip</h2>
+                            <pre>
+                            <code>
+ClippedDataset=SpaVectors.Clip(CountriesFilePath,-50,-50,50,50) # clip dataset (XMin,YMin,XMax,YMax)
+ClippedDataset.Save(OutputFolderPath+"Clip.shp") # save clipped shapefile
+
+SpaView.Show(ClippedDataset) # show dataset
+                    </code>
+                </pre>
+                            <br />
+
+                            <h2 id="Overlay Transformations">Overlay Transformations</h2>
+                            <pre>
+                            <code>
+SpaView.Show(CountriesFilePath)          # Show the countries file
+SpaView.Show(OverlayFile)          # Show the overlay file
+                    </code>
+                </pre>
+                            <br />
+
+                            <h2 id="Intersection">Intersection</h2>
+                            <pre>
+                            <code>
+# Intersection between the two shapefiles
+Intersection=SpaVectors.Intersection(CountriesFilePath,OverlayFile) # perform a union on a geometry to get the new layer
+Intersection.Save(OutputFolderPath+"Intersection.shp") # save the output
+                    </code>
+                </pre>
+                            <br />
+
+                            <h2 id="Difference">Difference</h2>
+                            <pre>
+                            <code>
+# Find the difference between the shapefiles and the polygon (erase the area of the smaller polygon)
+Difference=SpaVectors.Difference(CountriesFilePath,OverlayFile)
+Difference.Save(OutputFolderPath+"Difference.shp") # save the output
+
+SpaView.Show(Intersection)        # Show the Intersection file
+
+SpaView.Show(Difference)          # Show the Difference file
+                    </code>
+                </pre>
+                            <br />
+
+                            <h2 id="Overlay Operations">Overlay Operations</h2>
+                            <pre>
+                            <code>
+# Touches
+Touch=SpaVectors.Touches(CountriesFilePath,OverlayFile) # have at least one point in common but interiors do not intersect
+print("Touch:"+format(Touch)) # should be False
+
+# Disjoint
+Disjoint=SpaVectors.Disjoint(CountriesFilePath,OverlayFile)
+print("Disjoint:"+format(Disjoint)) # should be False
+
+# Overlap
+Overlap=SpaVectors.Overlaps(CountriesFilePath,OverlayFile)
+print("Overlap:"+format(Overlap)) # should be true
+
+# Cross
+Cross=SpaVectors.Crosses(CountriesFilePath,OverlayFile)
+print("Cross:"+format(Cross)) # should be False
+
+# Contain
+Contain=SpaVectors.Contains(CountriesFilePath,OverlayFile)
+print("Touch:"+format(Touch)) # should be False
+                    </code>
+                </pre>
+                            <br />
+
+
         </main>
     </div>
 
