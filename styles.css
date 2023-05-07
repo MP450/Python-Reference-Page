@@ -23,11 +23,14 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
     font-size: 16px;
     font-family: sans-serif;
     background: var(--pacific-blue);
     font-weight: bold;
+    width: 90%;
 }
 
 a:link,
@@ -58,26 +61,36 @@ h1 {
 }
 
 .header {
+    top: 0px;
     display: block;
     position: fixed;
-    padding: 5px;
+    padding: 7px;
     height: 110px;
+    position: fixed;
 }
 
 .footer {
+    display: flex;
     height: 80px;
-
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    z-index: 1001;
 }
 
 .top-menu {
     display: flex;
+    flex-direction: row;
     height: 50px;
+    min-width: 600px;
     background-color: var(--sea-glass);
-    margin-top: 20px;
+    margin: 35px;
     align-items: center;
     justify-content: center;
-    border-bottom: 4px solid var(--sunset-gold);
-    border-top: 4px solid var(--sunset-gold);
+    border-bottom: 3px solid var(--sunset-gold);
+    border-top: 3px solid var(--sunset-gold);
 }
 
 .top-menu > li {
@@ -100,21 +113,56 @@ div.scroll {
     color: var(--sea-glass);
 }
 
+.content-container {
+    position: relative;
+    padding: 10px;
+    top: 0px;
+    right: 0;
+    left: 0;
+    height: 1200px;
+}
+
 .side-menu {
-    display: inline-block;
+    display: flex;
     flex-direction: column;
-    width: 250px;
+    width: 25%;
+    max-width: 250px;
     background-color: var(--dune-grass);
-    margin-top: 175px;
+    margin-top: 185px;
+    margin-left: 10px;
     padding: 5px;
     border-radius: 5px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    overflow-x: hidden;
+    float: left;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 900px;
+    background-color: var(--dune-grass);
+    margin-top: 175px;
+    color: var(--old-growth-green);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 0;
+    position: absolute;
+    top: 25px;
+    left: 300px;
 }
 
 .table-contents {
-    background-color: var(--sea-glass);
+    background-color: var(--old-growth-green);
     color: var(--dune-grass);
     font-size: 22px;
     border-radius: 5px;
+    margin: 3px;
+    text-align: center;
 }
 
 .scroll > li a {
@@ -125,7 +173,7 @@ div.scroll {
     margin: 3px;
 }
 .section-header {
-    background-color: var(--sea-glass);
+    background-color: var(--old-growth-green);
     color: var(--dune-grass);
     font-size: 20px;
     font-style: italic;
@@ -133,17 +181,7 @@ div.scroll {
     border-radius: 5px;
 }
 
-main {
-    display: inline-block;
-    flex-direction: column;
-    background-color: var(--dune-grass);
-    margin-top: 1px;
-    width: 600px;
-    color: var(--old-growth-green);
-    padding: 10px;
-    border-radius: 5px;
-    z-index: 0;
-}
+
 
 code {
     color: var(--chanterelle-gold);

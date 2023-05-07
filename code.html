@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Python Reference Page</title>
+    <title>Python Reference</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,7 +49,7 @@
             <li><a href="code.html#fun">For Fun</a></li>
 
             <li class="section-header">Random Library</li>
-            <li><a href="code.html#random-float">Get Random Floatr</a></li>
+            <li><a href="code.html#random-float">Get Random Float</a></li>
             <li><a href="code.html#random-int">Get Random Integer</a></li>
             <li><a href="code.html#random-range">Get Random Integer in Range</a></li>
             <li><a href="code.html#random-list">List of Random Numbers</a></li>
@@ -503,7 +503,7 @@ SpaView.Show(BufferedDataset) # display the dataset in a view
                 <br />
 
                 <h2 id="Union">
-                    Union</h2id="">
+                    Union</h2>
                     <pre>
                     <code>
 UnionBuffer=SpaVectors.Union(BufferedDataset) # perform a union on the dataset
@@ -516,7 +516,7 @@ SpaView.Show(UnionBuffer) # view the results
                     <br />
 
                     <h2 id="Centroids">
-                        Centroids</h2id="">
+                        Centroids</h2>
                         <pre>
                         <code>
 
@@ -530,7 +530,7 @@ SpaView.Show(CentroidDataset)
                         <br />
 
                         <h2 id="Convex Hull">
-                            Convex Hull</h2id="">
+                            Convex Hull</h2>
                             <pre>
                             <code>
 ConvexHullDataset=SpaVectors.ConvexHull(CountriesFilePath) # find convex hull
@@ -567,7 +567,7 @@ SpaView.Show(ClippedDataset) # show dataset
                             <h2 id="Overlay Transformations">Overlay Transformations</h2>
                             <pre>
                             <code>
-SpaView.Show(CountriesFilePath)          # Show the countries file
+SpaView.Show(CountriesFilePath)    # Show the countries file
 SpaView.Show(OverlayFile)          # Show the overlay file
                     </code>
                 </pre>
@@ -577,8 +577,8 @@ SpaView.Show(OverlayFile)          # Show the overlay file
                             <pre>
                             <code>
 # Intersection between the two shapefiles
-Intersection=SpaVectors.Intersection(CountriesFilePath,OverlayFile) # perform a union on a geometry to get the new layer
-Intersection.Save(OutputFolderPath+"Intersection.shp") # save the output
+Intersection=SpaVectors.Intersection(CountriesFilePath,OverlayFile)  # perform a union on a geometry to get the new layer
+Intersection.Save(OutputFolderPath+"Intersection.shp")               # save the output
                     </code>
                 </pre>
                             <br />
@@ -621,7 +621,7 @@ Contain=SpaVectors.Contains(CountriesFilePath,OverlayFile)
 print("Touch:"+format(Touch)) # should be False
                     </code>
                 </pre>
-                            <br />
+                            <br /><br /><br />
 
 
         </main>
